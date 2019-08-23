@@ -1,9 +1,10 @@
-import { combineReducers } from 'redux';
-
-import todos from './reducers/todos';
+import { combineReducers } from "redux";
+import toDos from "./reducers/todosReducer";
+import toDoDetails from "./reducers/todoDetailsReducer";
 
 const appReducer = combineReducers({
-  todos,
+  toDos,
+  toDoDetails
 });
 
 export default (state, action) => {
